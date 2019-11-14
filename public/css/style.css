@@ -1,0 +1,26 @@
+#frmGroup .gmbrHsl{
+	width: 650px;
+	height: 920px;
+	padding: 30px;
+	border: 1px solid lightblue;
+	box-sizing: border-box;
+	border-radius: 25px;
+
+}
+
+#frmGroup{
+	display: none;
+}
+
+.modal-body{
+	font-family: viga;
+	font-size: 18px;
+}
+
+.modal-header h4{	
+	font-weight: bold;
+}
+
+.buttonGrey{
+	background-color: grey;
+}
