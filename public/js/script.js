@@ -15,22 +15,17 @@
                  
                  /*variabel untuk dapetin tinggi*/
                  var img = new Image(); 
-                 img.src = e.target.result;                 
+                 img.src = e.target.result;                             
                  /*end*/
                 
                 /*fungsi untuk dapetin tinggi*/
                  img.onload = function(){
                      var h = this.height;
-                     var w = this.height;
-                     // alert('height :'+ h); 
-                     // alert('width :'+ w);
+                     var w = this.width;                      
                  }
                  /*end*/ 
-
-             }            
-              reader.readAsDataURL(input.files[0]);
-            // alert('ada gambar');   
-           
+             }                              
+                reader.readAsDataURL(input.files[0]);  
         }
     }
     
@@ -43,14 +38,13 @@
         {
           $('#frmGroup').slideDown('slow');
            readURL(this);
-           // alert(fileExtension);
+           // alert(fileExtension);           
            var LocFile = URL.createObjectURL(event.target.files[0]);
            var SizeFile = x.target.files[0].size;
-           var SizeFile = Math.round(SizeFile/1024)+" Kb ";
+           var SizeFile = Math.round(SizeFile/1024)+" Kb ";                     
            document.frmGmbr.hsl.value = GFile; 
            document.frmGmbr.LocFile.value = LocFile; 
-          $('#btnSimpan').attr("disabled", false);
-
+          $('#btnSimpan').attr("disabled", false);          
            // alert(SizeFile);         
         }else{
             // alert('bukan file gambar');

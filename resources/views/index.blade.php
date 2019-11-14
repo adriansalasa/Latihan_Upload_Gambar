@@ -59,7 +59,7 @@
 		<div class="row">			
 			<div class="col-5">								
 			  	 <button type="submit" class="btn btn-primary btn-lg mt-2 ml-2 mb-3" id="btnSimpan">Simpan Gambar</button>
-				 <input type="hidden" name="LocFile" id="LocFile">
+				 <input type="hidden" name="LocFile" id="LocFile">				 
 					 <!-- <button type="submit" class="btn btn-primary">Simpan</button> -->			
 			</div>
 		</div>
@@ -83,7 +83,7 @@
 		      
 		    </div>
 		  </div>
-
+		</form>
 	</div>
 
 	<!-- <form id="form1" runat="server">
